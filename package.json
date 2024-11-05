@@ -1,0 +1,16 @@
+{
+  "name": "5-oy-8-dars",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "daisyui": "^4.12.14",
+    "tailwindcss": "^3.4.14"
+  }
+}

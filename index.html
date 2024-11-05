@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malumot</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body
+    class="bg-[url('https://picsum.photos/600')] h-screen bg-cover bg-center text-white"
+  >
+    <form class="w-96 mx-auto">
+      <h1 class="text-4xl fond-bold mb-5 text-center">Fill This form</h1>
+      <label class="form-control w-full">
+        <div class="label">
+          <span class="label-text-alt text-white">Name:</span>
+        </div>
+        <input
+          type="text"
+          placeholder="Type here"
+          class="input input-bordered textarea-info w-full bg-inherit text-white"
+          id="firstName"
+        />
+        <div class="label"></div>
+      </label>
+      <label class="form-control w-full">
+        <div class="label text-white">
+          <span class="label-text-alt text-white">Age</span>
+        </div>
+        <input
+          type="number"
+          placeholder="Type here"
+          class="input input-bordered textarea-info w-full bg-inherit text-white"
+          id="age"
+        />
+        <div class="label"></div>
+      </label>
+      <span class="label-text-alt text-white">Bio:</span>
+      <textarea
+        id="bio"
+        class="textarea textarea-info w-full resize-none bg-inherit text-white"
+        placeholder="Bio"
+      ></textarea>
+
+      <button class="btn my-10 btn-block textarea-info bg-inherit text-white">
+        submit
+      </button>
+    </form>
+
+    <div class="mx-auto max-w-6xl">
+      <div id="userCount" class="font-semibold text-xl">All users:</div>
+      <div class="overflow-x-auto">
+        <table class="table">
+          <thead>
+            <tr class="text-white">
+              <th>Name</th>
+              <th>Bio</th>
+              <th>Action</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <template>
+              <tr>
+                <td>
+                  <div class="flex items-center gap-3">
+                    <div class="avatar">
+                      <div class="mask mask-squircle h-12 w-12">
+                        <img
+                          class="avatar-image"
+                          src="https://img.daisyui.com/images/profile/demo/2@94.webp"
+                          alt="Avatar Tailwind CSS Component"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <div class="font-bold user-name"></div>
+                      <div class="text-sm opacity-50 age"></div>
+                    </div>
+                  </div>
+                </td>
+                <td class="bio"></td>
+
+                <th>
+                  <button
+                    class="btn btn-xs delete-btn bg-inherit textarea-info"
+                  >
+                    delete
+                  </button>
+                </th>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
