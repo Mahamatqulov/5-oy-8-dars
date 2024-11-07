@@ -2235,6 +2235,10 @@ html {
   background-image: url('https://picsum.photos/600');
 }
 
+.bg-\[url\(\'https\:\/\/picsum\.photos\/6\'\)\] {
+  background-image: url('https://picsum.photos/6');
+}
+
 .bg-cover {
   background-size: cover;
 }
